@@ -131,3 +131,51 @@ app {
         display: block;
     }
 }
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.ttt-grid-container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    padding: 5px;
+    height: 400px;
+    width: 400px;
+    background-color: darkorange;
+    border-radius: 4px;
+}
+
+.ttt-grid-item {
+    border-radius: 4px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    background-color: #555555;
+}
+
+.ttt-grid-item:hover {
+    background-color: #777777;
+}
